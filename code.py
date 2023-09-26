@@ -1,4 +1,4 @@
- import tkinter as tk
+import tkinter as tk
 import datetime
 from time import strftime, sleep
 import winsound
