@@ -76,7 +76,6 @@ Minute.place(x=120, y=80, width=120, height=30)
 
 # Dropdown menu for AM/PM
 am_pm_choices = ["AM", "PM"]
-AM_PM.set(am_pm_choices[0])  # Set default value to AM
 am_pm_menu = tk.OptionMenu(clock, AM_PM, *am_pm_choices)
 am_pm_menu.config(font=("Arial", 12))
 am_pm_menu.place(x=250, y=80, width=60, height=30)
