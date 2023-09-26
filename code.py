@@ -3,19 +3,23 @@ import datetime
 from time import *
 import winsound
 
-def update():
-	time_string = strftime("%I:%M:%S %p")
-	timeLabel.config(text=time_string)
+set_alarm_timer = 0
 
-	if(hour == strftime("%I") and min == strftime("%M")):
-		winsound.PlaySound("alarm.wav", winsound.SND_FILENAME)
-		
-	timeLabel.after(1000, update) #recursion for continuous update
+def update():
+    time_string = strftime("%I:%M:%S %p")
+    timeLabel.config(text=time_string)
+
+    current_time = datetime.datetime.now()
+    now = current_time.strftime("%H:%M:%S")
+    date = current_time.strftime("%d/%m/%Y")
+
+    if (now == set_alarm_timer):
+        winsound.PlaySound("sound.wav", winsound.SND_ASYNC) 
+    
+    timeLabel.after(1000, update) #recursion for continuous update
 
 def alarm(set_alarm_timer):
     while False:
-        time_string = strftime("%I:%M:%S %p")
-        timeLabel.config(text=time_string)
         current_time = datetime.datetime.now()
         now = current_time.strftime("%H:%M:%S")
         date = current_time.strftime("%d/%m/%Y")
@@ -32,10 +36,12 @@ def alarm(set_alarm_timer):
 def actual_time():
     alarm_hour = Hour.get()
     alarm_min = Minute.get()
-    
+
+    alarm_hour.zfill(2)
+    alarm_min.zfill(2)
     #No need for conversion if we use 24 hour clock
     
-    set_alarm_timer = f"{alarm_hour}:{alarm_min}"
+    set_alarm_timer = f"{alarm_hour}:{alarm_min}:00"
     alarm(set_alarm_timer)
 
 
