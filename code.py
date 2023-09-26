@@ -32,38 +32,28 @@ def actual_time():
     alarm(set_alarm_timer, am_pm)
 
 clock = Tk()
-clock.title("The Alarm Clock")
-clock.geometry("400x250")
+clock.resizable(width=False, height=False)
+clock.geometry('385x130')
 
-time_format = Label(clock, text="Enter time in 12-hour format:", fg="red", bg="black", font="Arial")
-time_format.place(x=60, y=150)
+Instructions = Label(clock, font=("Arial",10),fg="#FF0000",bg="black", text="Enter time in 24hr format")
+Instructions.place(x=0, y = 110, width =385)
+Instructions["anchor"] = "center"
 
-addTime = Label(clock, text="Hour  Min   Sec", font=60)
-addTime.place(x=110)
-
-setYourAlarm = Label(clock, text="When to wake you up", fg="blue", relief="solid", font=("Helvetica", 7, "bold"))
-setYourAlarm.place(x=0, y=29)
 
 # The Variables we require to set the alarm (initialization):
 hour = StringVar()
 min = StringVar()
-sec = StringVar()
-am_pm_var = StringVar(value="AM")  # Default to AM
 
 # Time required to set the alarm clock:
-hourTime = Entry(clock, textvariable=hour, bg="pink", width=15)
-hourTime.place(x=110, y=50)
-minTime = Entry(clock, textvariable=min, bg="pink", width=15)
-minTime.place(x=150, y=50)
-secTime = Entry(clock, textvariable=sec, bg="pink", width=15)
-secTime.place(x=200, y=50)
+Hour = Entry(clock, fg="black", bg="#54B646",font=("Arial",15))
+Hour.place(x=0,y=80,width=120,height=30)
+Minute = Entry(clock, fg="black", bg="#54B646",font=("Arial",15))
+Minute.place(x=120,y=80,width=120,height=30)
 
-# AM/PM dropdown menu
-am_pm_dropdown = OptionMenu(clock, am_pm_var, "AM", "PM")
-am_pm_dropdown.place(x=280, y=48)
 
 # To take the time input by user:
-submit = Button(clock, text="Set Alarm", fg="red", width=10, command=actual_time)
-submit.place(x=110, y=100)
+SetAlarm = Button(clock, text="Set Alarm")
+SetAlarm.place(x=240,y=80, width=147,height=30)
+SetAlarm["command"] = actual_time()
 
 clock.mainloop()
