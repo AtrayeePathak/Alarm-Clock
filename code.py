@@ -30,9 +30,12 @@ def alarm(set_alarm_timer):
     timeLabel.config(text=time_string)
     if now == set_alarm_timer:
       print("Time to Wake up")
-      winsound.PlaySound("sound.wav", winsound.SND_ASYNC)
+      for i in range(10):
+        winsound.PlaySound("sound.wav", winsound.SND_ASYNC)
+        sleep(1)
       break
     sleep(1)
+
 
 
 def actual_time():
