@@ -41,3 +41,6 @@ This project is designed to demonstrate the power of collaboration and version c
 - @AtrayeePathak
 - @Seal-On-A-Rock
 
+## License
+   This Python Alarm Clock is open-source software licensed under the MIT License.
+
