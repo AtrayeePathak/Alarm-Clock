@@ -37,3 +37,7 @@ This project is designed to demonstrate the power of collaboration and version c
 
 <img width="687" alt="Screenshot 2023-09-29 191455" src="https://github.com/AtrayeePathak/Alarm-Clock/assets/143244755/c6121ec3-cdfb-49df-ae0c-3a6990759bcc">
 
+## Authors
+- @AtrayeePathak
+- @Seal-On-A-Rock
+
