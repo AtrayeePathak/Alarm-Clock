@@ -44,3 +44,12 @@ This project is designed to demonstrate the power of collaboration and version c
 ## License
    This Python Alarm Clock is open-source software licensed under the MIT License.
 
+## Usage 
+These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes
+
+ 1- Clone the Git Repository
+
+ 2- Open the project directory in your code editor.
+
+ 3- Open the repository in your IDE(Preferably VSCode) to play the game.(Use Live Server Extension)
+
