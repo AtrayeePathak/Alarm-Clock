@@ -23,12 +23,6 @@ This project is designed to demonstrate the power of collaboration and version c
 
 ## Feedback
 
-<img width="688" alt="Screenshot 2023-09-26 135724" src="https://github.com/AtrayeePathak/Alarm-Clock/assets/143244755/3c7604c1-b211-4833-a8b5-63c9059283da">
-
-<img width="630" alt="Screenshot 2023-09-26 135744" src="https://github.com/AtrayeePathak/Alarm-Clock/assets/143244755/739704a9-bce1-4421-a029-84e50485e946">
-
-<img width="641" alt="Screenshot 2023-09-29 191409" src="https://github.com/AtrayeePathak/Alarm-Clock/assets/143244755/92b198cb-89e8-45bf-86a7-183a41ca780f">
-
 <img width="710" alt="Screenshot 2023-09-29 191420" src="https://github.com/AtrayeePathak/Alarm-Clock/assets/143244755/8d3f9142-0b32-44cd-ac8d-eb746e1faf41">
 
 <img width="729" alt="Screenshot 2023-09-29 191430" src="https://github.com/AtrayeePathak/Alarm-Clock/assets/143244755/efbded7d-0e07-40f1-905c-c8abcf7a1e8d">
